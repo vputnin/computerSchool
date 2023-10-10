@@ -12,7 +12,6 @@
         }
         .left-sidebar {
             width: 30%;
-            padding: 20px;
         }
         .main-content {
             width: 70%;
@@ -78,12 +77,47 @@
             background-color: #f1f1f1;
         }
     </style>
+    <style>
+        /*body {font-family: Arial, Helvetica, sans-serif;}*/
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+    </style>
+    <link href="prism/prism.css" rel="stylesheet" />
+    <script src="prism/prism.js"></script>
 </head>
 <body>
     <header>
-        <h1>Java Programming Course</h1>
+<!--        <div class="navbar">-->
+<!--            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>-->
+<!--            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>-->
+<!--            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>-->
+<!--            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>-->
+<!--        </div>-->
+
     </header>
-    
+
+<!--    <h1>Java Programming Course</h1>-->
+    <div class="container col-xs-12">
+        <div class="navbar">
+            <a href="#"><i></i> Home</a>
+            <a href="#"><i></i> Search</a>
+            <a href="#"><i></i> Contact</a>
+            <a href="#" style="float: right"><i ></i> Login</a>
+        </div>
+    </div>
     <div class="container col-xs-12">
         <div class="left-sidebar">
 <!--            <h2>Course Modules</h2>-->
@@ -97,7 +131,7 @@
 <!--                <li>Module 7: Real World Applications</li>-->
 <!--                <li>Module 8: Final Project</li>-->
 <!--            </ul>-->
-
+            <progress id="file" value="32" max="100"> 32% </progress>
             <button class="collapsible">Module 1: Introduction to Programming and Java</button>
             <div class="content">
                 <div>
@@ -132,7 +166,29 @@
             <div class="text-description">
                 <h2>Description</h2>
                 <p>This lesson introduces the basic concepts of programming and Java.</p>
-                <img src="vimeo.com/820795478" alt="Image description" width="300">
+                <img src="img/img1.jpg" alt="Image description" width="600">
+            </div>
+
+            <div class="text-description">
+                <h2>Code example</h2>
+                <p>This lesson introduces the basic concepts of programming and Java.</p>
+                <pre class="line-numbers">
+            <code class="language-java" data-copy-state="copy" data-prismjs-copy="COPY">
+    @SuppressWarnings("rawtypes")
+	public static Map map(Object...pairs) {
+		if (pairs.length % 2 == 1) {
+			throw new IllegalArgumentException("Every key should have a value: " + Arrays.toString(pairs));
+		}
+		Map<Object, Object> result = new HashMap<>();
+		if (pairs.length > 0) {
+			for (int i = 0; i < pairs.length; i+=2) {
+				result.put(pairs[i], pairs[i+1]);
+			}
+		}
+		return result;
+	}
+        </code>
+        </pre>
             </div>
 
             <div class="code-test">

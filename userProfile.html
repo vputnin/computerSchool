@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Programming Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-sidebar {
+            width: 30%;
+        }
+
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <style>
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */
+            overflow: hidden;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <style>
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+    <style>
+        /*body {font-family: Arial, Helvetica, sans-serif;}*/
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+    </style>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .right {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<!--    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">-->
+</head>
+<body>
+<header>
+    <!--        <div class="navbar">-->
+    <!--            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>-->
+    <!--            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>-->
+    <!--            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>-->
+    <!--            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>-->
+    <!--        </div>-->
+
+</header>
+
+<!--    <h1>Java Programming Course</h1>-->
+<div class="container col-xs-12">
+    <div class="navbar">
+        <a href="#"><i></i> Home</a>
+        <a href="#"><i></i> Search</a>
+        <a href="#"><i></i> Contact</a>
+        <a href="#" style="float: right"><i></i> Login</a>
+    </div>
+</div>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+    <div class="column left" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+    </div>
+    <div class="column right" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+    </div>
+</div>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+</div>
+</body>
+</html>

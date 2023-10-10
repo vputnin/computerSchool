@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Programming Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-sidebar {
+            width: 30%;
+        }
+
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <style>
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */
+            overflow: hidden;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <style>
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+    <style>
+        /*body {font-family: Arial, Helvetica, sans-serif;}*/
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--        <div class="navbar">-->
+    <!--            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>-->
+    <!--            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>-->
+    <!--            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>-->
+    <!--            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>-->
+    <!--        </div>-->
+</header>
+
+<!--    <h1>Java Programming Course</h1>-->
+<div class="container col-xs-12">
+    <div class="navbar">
+        <a href="#"><i></i> Home</a>
+        <a href="#"><i></i> Search</a>
+        <a href="#"><i></i> Contact</a>
+        <a href="#" style="float: right"><i></i> Login</a>
+    </div>
+</div>
+<div class="container col-xs-12">
+    <div class="left-sidebar">
+        <!--            <h2>Course Modules</h2>-->
+        <!--            <ul>-->
+        <!--                <li>Module 1: Introduction to Programming and Java</li>-->
+        <!--                <li>Module 2: Java Basics</li>-->
+        <!--                <li>Module 3: Object-Oriented Programming in Java</li>-->
+        <!--                <li>Module 4: Data Structures and Algorithms in Java</li>-->
+        <!--                <li>Module 5: Advanced Java</li>-->
+        <!--                <li>Module 6: Java Libraries and Frameworks</li>-->
+        <!--                <li>Module 7: Real World Applications</li>-->
+        <!--                <li>Module 8: Final Project</li>-->
+        <!--            </ul>-->
+
+        <button class="collapsible">Module 1: Introduction to Programming and Java</button>
+        <div class="content">
+            <div>
+                <p>Java intro 1</p>
+            </div>
+            <div>
+                <p>Java intro 2</p>
+            </div>
+        </div>
+        <button class="collapsible">Open Section 2</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Open Section 3</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="video-section">
+            <h2>Java Test template</h2>
+        </div>
+
+        <div>
+            <div>
+                1. test test test test test test test test test test test test test test test test test test test test
+            </div>
+            <form action="">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div>
+            <div>
+                2. test test test test test test test test test test test test test test test test test test test test
+            </div>
+            <form action="/action_page.php">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</body>
+</html>
